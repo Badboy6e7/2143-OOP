@@ -1,1 +1,0 @@
-Hello reader. This is Luis speaking. Before you look at my code I will mention a few things 
