@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/cmake_install.cmake",
+		"C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-build/cmake_install.cmake",
+		"C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-build/examples/cmake_install.cmake",
+		"C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-build/doc/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

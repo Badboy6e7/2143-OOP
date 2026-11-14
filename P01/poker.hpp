@@ -1,18 +1,12 @@
 #pragma once
 
 #include <algorithm>
-#include <iostream>
 #include <map>
 #include <random>
 #include <string>
 #include <vector>
 
 using namespace std;
-
-vector<string> Rank = {"",     "Two",   "Three", "Four", "Five",
-                       "Six",  "Seven", "Eight", "Nine", "Ten",
-                       "Jack", "Queen", "King",  "Ace"};
-vector<string> Suit = {"Clubs", "Diamonds", "Hearts", "Spades"};
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -60,13 +54,7 @@ public:
   int getRank() const;
   int getSuit() const;
 
-  std::string getRankName() const;
-  std::string getSuitName() const;
-  //   std::string toString() const;
 };
-
-string Card::getRankName() const { return Rank[getRank()]; }
-string Card::getSuitName() const { return Suit[getSuit()]; }
 
 Card::Card(int v) { value = v; }
 
@@ -132,61 +120,23 @@ private:
 public:
   void sortHand();
   void addCard(const Card &card);
+  void replaceCard(int index, const Card &card);
+  const Card& getCard(int index) const;
   void clear();
 
   int size() const;
   void show() const;
-
-friend ostream &operator<<(ostream &os, const Hand &h) {
-    // Top border
-    for (size_t i = 0; i < h.hand.size(); i++) {
-        os << "+-------+  ";
-    }
-    os << '\n';
-
-    // Card rank at the top
-    for (const auto &c : h.hand) {
-        string rank = rankName.at(c.getRank() + 2);
-        os << "| " << rank << string(6 - rank.length(), ' ') << "|  ";
-    }
-    os << '\n';
-
-    // Empty space
-    for (size_t i = 0; i < h.hand.size(); i++) {
-        os << "|       |  ";
-    }
-    os << '\n';
-
-    // Suit symbol in the center
-    for (const auto &c : h.hand) {
-        os << "|   " << suitName.at(c.getSuit()) << "   |  ";
-    }
-    os << '\n';
-
-    // Empty space
-    for (size_t i = 0; i < h.hand.size(); i++) {
-        os << "|       |  ";
-    }
-    os << '\n';
-
-    // Card rank at the bottom
-    for (const auto &c : h.hand) {
-    string rank = rankName.at(c.getRank() + 2);
-    os << "| " << string(6 - rank.length(), ' ') << rank << "|  ";
-    }
-    os << '\n';
-
-    // Bottom border
-    for (size_t i = 0; i < h.hand.size(); i++) {
-        os << "+-------+  ";
-    }
-
-    return os;
-}
 };
-
 void Hand::addCard(const Card &card) { hand.push_back(card); }
 
+void Hand::replaceCard(int index, const Card &card) {
+  if (index >= 0 && index < hand.size()) {
+    hand[index] = card;
+  }
+}
+const Card& Hand::getCard(int index) const {
+  return hand.at(index);
+}
 void Hand::clear() { hand.clear(); }
 
 int Hand::size() const { return hand.size(); }
@@ -195,11 +145,4 @@ void Hand::sortHand() {
   std::sort(hand.begin(), hand.end(), [](const Card &a, const Card &b) {
     return a.getRank() > b.getRank();
   });
-}
-
-void Hand::show() const {
-  for (auto &c : hand) {
-    cout << "[" << c.getRank() << "," << c.getSuit() << "," << c.getValue()
-         << "]";
-  }
 }

@@ -1,0 +1,21 @@
+# ninja log v7
+2	90	8164012817921121	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir	97b12319610ac828
+2	90	8164012817921121	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir	97b12319610ac828
+90	7386	8164012890870581	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download	b96b983c63db89e9
+90	7386	8164012890870581	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download	b96b983c63db89e9
+7386	7581	8164012890960582	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update	bf2d4835d8d970b6
+7386	7581	8164012890960582	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update	bf2d4835d8d970b6
+7581	7695	8164012893936882	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch	49b2946f30922ba3
+7581	7695	8164012893936882	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch	49b2946f30922ba3
+7695	7817	8164012895149928	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure	eb02cf73e37218c3
+7695	7817	8164012895149928	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure	eb02cf73e37218c3
+7817	7947	8164012896460245	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build	e1c7944d4a51943c
+7817	7947	8164012896460245	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build	e1c7944d4a51943c
+7947	8054	8164012897535420	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install	800656e2f31d7aa0
+7947	8054	8164012897535420	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install	800656e2f31d7aa0
+8054	8162	8164012898610623	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test	a59a50145b9b3d7
+8054	8162	8164012898610623	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test	a59a50145b9b3d7
+8163	8314	8164012900135982	CMakeFiles/ftxui-populate-complete	ea6596e58244b39
+8163	8314	8164012900135982	ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-done	ea6596e58244b39
+8163	8314	8164012900135982	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete	ea6596e58244b39
+8163	8314	8164012900135982	C:/Users/luisv/Downloads/MSU/2143-OOP/P01/build/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-done	ea6596e58244b39
