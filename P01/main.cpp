@@ -16,10 +16,9 @@ int main(int argc, char **argv) {
     hand.addCard(deck.deal());
   }
 
-cout << "              =============================\n";
-cout << "                   FIVE-CARD DRAW POKER\n";
-cout << "              =============================\n\n";
-
+  cout << "              =============================\n";
+  cout << "                   FIVE-CARD DRAW POKER\n";
+  cout << "              =============================\n\n";
 
   hand.sortHand();
 
