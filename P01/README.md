@@ -1,1 +1,1 @@
-This is my poker game I built. Portion of the code from Dr. Griffin and the use of AI 
+This is my poker game I built. Portion of the code comes from Dr. Griffin and the use of AI 
