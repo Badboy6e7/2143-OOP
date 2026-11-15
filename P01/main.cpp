@@ -22,10 +22,8 @@ int main(int argc, char **argv)
 
     vector<bool> replace(5, false);
 
-    // Tracks whether the replacement round is complete.
     bool drawComplete = false;
 
-    // Deal the initial five cards.
     for (int i = 0; i < 5; i++)
     {
         hand.addCard(deck.deal());
@@ -33,7 +31,6 @@ int main(int argc, char **argv)
 
     hand.sortHand();
 
-    // Display the cards.
     auto renderer = ftxui::Renderer([&]
     {
         ftxui::Elements cards;
@@ -106,21 +103,21 @@ int main(int argc, char **argv)
             return false;
         }
 
-        // Move left.
+        // Move selection to the left when the left arrow key is pressed.
         if (event == ftxui::Event::ArrowLeft)
         {
             selected = (selected + 4) % 5;
             return true;
         }
 
-        // Move right.
+        // Move selection to the right when the right arrow key is pressed.
         if (event == ftxui::Event::ArrowRight)
         {
             selected = (selected + 1) % 5;
             return true;
         }
 
-        // Mark or unmark a card for replacement.
+        // Toggle replacement selection when Space is pressed.
         if (event == ftxui::Event::Character(' '))
         {
             replace[selected] = !replace[selected];
@@ -146,7 +143,6 @@ int main(int argc, char **argv)
                 replace[i] = false;
             }
 
-            // Finish the replacement round.
             drawComplete = true;
 
             return true;
